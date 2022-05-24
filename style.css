@@ -1,0 +1,96 @@
+/* GERAL */
+:root {
+    --color-hue: 213;
+    --light-color: hsl(var(--color-hue), 53%, 43%);
+    --dark-color: hsl(var(--color-hue), 85%, 11%);
+    --light-gray: hsl(var(--color-hue), 100%, 96%);
+    --dark-gray: hsl(var(--color-hue), 10%, 17%);
+    --trasition-time: 300ms;
+}
+
+html {
+    scrollbar-width: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: linear-gradient(
+            236.85deg,
+            var(--dark-color) 27.26%,
+            var(--light-color) 96.03%
+        )
+        fixed;
+}
+
+nav .nav-link {
+    color: var(--light-gray);
+}
+
+nav .nav-link:hover {
+    color: var(--light-gray);
+}
+
+main {
+    margin: 5% auto;
+    padding: 1.71rem;
+    width: min(750px, 90%);
+    background: var(--light-gray);
+    border-radius: 20px;
+    box-shadow: 0 4px 4px var(--dark-gray);
+}
+
+main section .nav-link {
+    width: fit-content;
+    font-size: larger;
+    color: var(--dark-gray);
+}
+
+/* PROJECTS */
+main section iframe {
+    display: block;
+    margin-inline: auto;
+    width: 80%;
+    aspect-ratio: 2/1;
+}
+
+/* RESUME */
+main header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main header svg {
+    transition: transform var(--trasition-time);
+}
+
+main header svg.rotate {
+    transform: rotate(0.25turn);
+}
+
+main section li {
+    font-size: large;
+}
+
+main section p + li {
+    margin-top: 1rem;
+}
+
+main section p {
+    margin-bottom: 0;
+}
+
+/* CONTACT */
+main section ul.nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+main section a svg {
+    width: 2rem;
+    height: auto;
+}
