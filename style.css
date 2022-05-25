@@ -25,14 +25,15 @@ body {
         fixed;
 }
 
-nav.navbar {
-    padding-bottom: 0;
-}
-
 @media (max-width: 621px) {
     nav.navbar {
-        flex-direction: column;
+        padding-top: 0;
+        flex-direction: column-reverse;
         justify-content: center;
+    }
+
+    nav input {
+        padding-block: 0.75rem;
     }
 }
 
@@ -46,7 +47,6 @@ nav .nav-link:hover {
 }
 
 nav input {
-    padding-block: 0.75rem;
     width: 18.35rem;
 }
 
@@ -67,10 +67,8 @@ main section .nav-link {
 
 /* PROJECTS */
 main section iframe {
-    display: block;
-    margin-inline: auto;
-    width: 80%;
-    aspect-ratio: 2/1;
+    width: 100%;
+    aspect-ratio: 3/4;
 }
 
 /* RESUME */
