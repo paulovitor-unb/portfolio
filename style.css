@@ -25,12 +25,29 @@ body {
         fixed;
 }
 
+nav.navbar {
+    padding-bottom: 0;
+}
+
+@media (max-width: 621px) {
+    nav.navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 nav .nav-link {
+    padding: 0.5rem 0.6rem;
     color: var(--light-gray);
 }
 
 nav .nav-link:hover {
     color: var(--light-gray);
+}
+
+nav input {
+    padding-block: 0.75rem;
+    width: 18.35rem;
 }
 
 main {
