@@ -55,19 +55,51 @@
             <hr />
             <section>
                 <h4>Projects</h4>
-                <ul>
-                    <li>
-                        <a
-                            class="nav-link projectLink"
-                            href="https://paulovitor-unb.github.io/doctorcare/"
-                            target="_blank"
-                        >
-                            NLW -> DoctorCare
-                        </a>
-                    </li>
-                </ul>
-                <iframe src="https://paulovitor-unb.github.io/doctorcare/">
-                </iframe>
+                <div
+                    id="projectsCarousel"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#projectsCarousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#projectsCarousel"
+                            data-bs-slide-to="1"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a
+                                class="nav-link projectLink"
+                                href="https://paulovitor-unb.github.io/doctorcare/"
+                                target="_blank"
+                            >
+                                NLW -> DoctorCare
+                            </a>
+                            <iframe
+                                src="https://paulovitor-unb.github.io/doctorcare/"
+                            >
+                            </iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <a
+                                class="nav-link projectLink"
+                                href="https://iot.mep.eng.br/linea.html"
+                                target="_blank"
+                            >
+                                MEP -> Linea water level
+                            </a>
+                            <iframe src="https://iot.mep.eng.br/linea.html">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </body>
