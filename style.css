@@ -92,7 +92,7 @@ main section p {
 }
 
 /* CONTACT */
-main section ul.nav {
+main section section.nav {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1rem;
