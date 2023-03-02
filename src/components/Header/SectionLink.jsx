@@ -1,7 +1,9 @@
 function SectionLink({ section }) {
     return (
-        <li>
-            <a href={`#${section.toLowerCase()}`}>{section}</a>
+        <li className="d-flex justify-content-center fs-4">
+            <a href={`#${section.toLowerCase()}`} className="fw-semibold">
+                {section}
+            </a>
         </li>
     );
 }

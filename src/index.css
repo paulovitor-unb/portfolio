@@ -1,0 +1,59 @@
+h2,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgray;
+}
+
+.wrapper {
+    margin-inline: auto;
+    padding-inline: 1rem;
+    max-width: 1024px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header,
+footer {
+    background: lightblue;
+}
+
+main {
+    height: 10rem;
+}
+
+#nav-button {
+    height: 1.5rem;
+    aspect-ratio: 1;
+}
+
+#nav-button span {
+    height: 3px;
+    transform-origin: center center;
+    transition: 0.3s;
+}
+
+#nav-button.active span:first-child {
+    transform: translate(0, 11px) rotate(45deg);
+}
+
+#nav-button.active span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+#nav-button.active span:last-child {
+    transform: scaleX(0);
+}

@@ -1,8 +1,8 @@
 import ContactLink from "./ContactLink";
 
-function ContactsList() {
+function ContactsNav() {
     return (
-        <ul className="d-flex gap-3">
+        <ul className="d-flex justify-content-center gap-3">
             <ContactLink
                 site="LinkedIn"
                 url="https://www.linkedin.com/in/paulo-vitor-dos-santos/"
@@ -33,4 +33,4 @@ function ContactsList() {
         </ul>
     );
 }
-export default ContactsList;
+export default ContactsNav;
