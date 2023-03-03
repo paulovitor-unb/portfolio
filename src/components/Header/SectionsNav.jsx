@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 
 import { DeviceContext } from "../../App";
+import Capitalize from "../../services/Capitalize";
 import SectionLink from "./SectionLink";
 
 function SectionsNav() {
@@ -8,12 +9,11 @@ function SectionsNav() {
     const [sectionsList, setSectionsList] = useState([]);
 
     useEffect(() => {
-        setSectionsList(
-            Array.from(document.querySelectorAll("main section")).map(
-                (element) =>
-                    element.id.charAt(0).toUpperCase() + element.id.slice(1)
-            )
+        const mainSections = Array.from(
+            document.querySelectorAll("main section")
         );
+
+        setSectionsList(mainSections.map((section) => Capitalize(section.id)));
     }, []);
 
     return (
